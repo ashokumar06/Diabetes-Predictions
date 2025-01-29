@@ -34,6 +34,35 @@ def main():
             st.write("**Diabetes Detected**")
         else:
             st.write("**No Diabetes Detected**")
-
+    
+    st.markdown(
+    """
+    <style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+    }
+    .button-container a {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .button-container a:hover {
+        background-color: #45a049;
+    }
+    </style>
+    <div class="button-container">
+        <a href="https://ashok-prajapati2.github.io/Portfolio/" target="_blank">About Me</a>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 if __name__ == '__main__':
     main()
